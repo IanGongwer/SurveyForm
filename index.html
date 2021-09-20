@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Thank you for continuing to help our platform</p>
+            </div>
+            <form id="survey-form">
+                <label for="name" id="name-label">Name</label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br>
+                <label for="email" id="email-label">Email</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br>
+                <label for="age" id="number-label">Age</label>
+                <br>
+                <input type="number" id="number" name="age" placeholder="Enter in your age" min="10" max="100" required>
+                <br>
+                <label for="gender" id="gender-label">Gender</label>
+                <br>
+                <select name="gender" id="dropdown" required>
+                    <option value="" disabled selected hidden>Choose Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="pnts">Prefer Not To Say</option>
+                </select>
+                <div class="form-group">
+                    <label>What ethnic group do you primarily identify with?</label>
+                    <br>
+                    <label>
+                      <input
+                        name="ethnic-group"
+                        value="white"
+                        type="radio"
+                        checked
+                      />White</label>
+                    <br>
+                    <label>
+                      <input
+                        name="ethnic-group"
+                        value="hispanic"
+                        type="radio"
+                      />Hispanic</label>
+                    <br>
+                    <label
+                      ><input
+                        name="ethnic-group"
+                        value="asian"
+                        type="radio"
+                      />Asian</label>
+                  </div>
+                <label>Your Music Genres (Check all that apply)</label>
+                <br>
+                <input type="checkbox" name="genre-group" value="pop">
+                <label for="pop" id="pop">Pop</label>
+                <br>
+                <input type="checkbox" name="genre-group" value="rock">
+                <label for="rock" id="rock">Rock</label>
+                <br>
+                <input type="checkbox" name="genre-group" value="country">
+                <label for="country" id="country">Country</label>
+                <br>
+                <input type="checkbox" name="genre-group" value="hiphop">
+                <label for="hiphop" id="hiphop">Hip Hop</label>
+                <br>
+                <input type="checkbox" name="genre-group" value="jazz">
+                <label for="jazz" id="jazz">Jazz</label>
+                <br>
+                <input type="checkbox" name="genre-group" value="other">
+                <label for="other" id="other">Other</label>
+                <br>
+                <label>Ethnic Group</label>
+                <br>
+                <textarea name="addinfo" id="" cols="50" rows="5" placeholder="Enter your comment here"></textarea>
+                <br>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
